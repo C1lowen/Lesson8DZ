@@ -13,9 +13,7 @@ public class Level2Task3 {
             System.out.println(e);
         }
     }
-
-
-
+    
     static String saveToString(){
         StringBuilder sb = new StringBuilder();
 

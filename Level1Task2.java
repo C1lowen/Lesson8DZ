@@ -34,7 +34,7 @@ public class Level1Task2 {
 
         for(int[] rows : arr){
             for(int colm : rows){
-                sb.append(String.format("%s ", colm));
+                sb.append(String.format("%-6.6s\t", colm));
             }
             sb.append(System.lineSeparator());
         }

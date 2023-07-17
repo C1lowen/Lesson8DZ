@@ -10,7 +10,7 @@ public class Level2Task2 {
 
         try {
 
-            fileReader = new FileReader("x.txt");
+            fileReader = new FileReader("D:\\checkDz\\t.txt");
 
             int character;
             while ((character = fileReader.read()) != -1) {
@@ -32,6 +32,12 @@ public class Level2Task2 {
                 }
             }
         }
+
+        countSymbol(str, arr);
+
+    }
+
+    public static void countSymbol(String str, int [] arr){
         for(int i = 0; i < str.length(); i++){
             int max = 0;
             for(int j = 0; j < str.length(); j++) {
@@ -44,6 +50,5 @@ public class Level2Task2 {
             arr[max] = -1;
 
         }
-
     }
 }

@@ -1,27 +1,26 @@
 import java.io.File;
+import java.util.Scanner;
 
 public class Level1Task3 {
     public static void main(String[] args) {
-        File folderFile = new File(".");
-        File[] files = folderFile.listFiles();
-        for(var file : files){
-            if(!file.isFile()){
-                System.out.println(file + " => Каталог");
-                folderFileCheck(file);
-            }
-        }
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Введите путь к каталогу: ");
+        String nameFile = sc.nextLine();
+
+        File folderFile = new File(nameFile);
+        folderFileCheck(folderFile);
     }
 
     static void folderFileCheck(File folder){
 
         File[] files = folder.listFiles();
         for(var file : files){
-            if(!file.isFile()){
+            if(file.isDirectory()){
                 System.out.println(file + " => Каталог");
                 folderFileCheck(file);
             };
         }
-
 
     }
 }
