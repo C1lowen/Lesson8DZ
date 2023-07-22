@@ -1,2 +1,4 @@
-package Level2;public class Main {
+package Level2;
+
+public class Main {
 }
